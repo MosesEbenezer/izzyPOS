@@ -1,0 +1,129 @@
+.main-panel {
+  position: fixed;
+}
+
+.main-content {
+  padding-left: 0px;
+  // margin-right: 50%;
+}
+
+
+@media only screen and (max-width: 679px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-header {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-panel .main-content {
+    padding-left: 0px;
+  }
+}
+
+
+.btn-social {
+  margin-top: 4px;
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 50%;
+    margin: 1.75rem auto;
+  }
+}
+
+@media only screen and (max-width: 679px) {
+  .modal-dialog {
+    max-width: 95%;
+    margin: 1.75rem auto;
+  }
+}
+
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+
+.dark-modal .close {
+  color: white;
+}
+
+.light-blue-backdrop {
+  background-color: #5cb3fd;
+}
+
+.modal {
+  position: absolute;
+  top: 40%;
+  right: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.modal1 {
+  // position: absolute;
+  // top: 40%;
+  right: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.modal-popup {
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.08), 0 15px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.nav-link {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent transparent #f3f3f3;
+}
+.project-tab #tabs{
+  background: #007b5e;
+  color: #eee;
+}
+.project-tab #tabs h6.section-title{
+  color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: green;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent transparent #f3f3f3;
+  border-bottom: 3px solid !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.project-tab .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: green;
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-tab .nav-link:hover {
+  border: none;
+  cursor: pointer;
+}
+.project-tab thead{
+  background: #f3f3f3;
+  color: #333;
+}
+.project-tab a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}

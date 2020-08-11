@@ -1,0 +1,423 @@
+<div class="wrapper">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-faded" style="background-color: gray;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+      <span style="color: white;"><strong>Register ID :915283</strong></span>
+      <p> <span style="color: white; font-weight: bold;">Mobile phone :+2347037257633</span> </p>
+
+      </div>
+      <div class="navbar-container">
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+
+            <li>
+              <!-- <button type="button" class="btn btn-outline-primary btn-block btn-lg" data-toggle="modal" data-backdrop="false" data-target="#primary"> Launch Modal </button> -->
+              <button class="btn btn-social btn-min-width mr-2 mb-2 btn-success" (click)="openLg(content)"> Tap to add a
+                customer <span class="fa fa-user-plus"></span></button>
+            </li>
+
+            <li class="nav-item mt-1 d-none d-lg-block"><a id="navbar-notification-sidebar" href="javascript:;"
+                class="nav-link position-relative notification-sidebar-toggle" (click)="openSm(content1)"><i style="font-size:x-large; color: white;"
+                  class="fa fa-th"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-panel">
+    <div class="main-content">
+      <div class="content-wrapper">
+        <div class="container-fluid flex">
+
+          <section id="" class="col-9">
+
+            <ng-template #content let-modal>
+              <div class="modal-popup">
+                <div class="modal-header bg-success">
+                  <h4 class="modal-title"><span style="text-align: center;">Enter</span></h4>
+                  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="card-body" style="padding:0px">
+                    <div class="card-block">
+                      <ul class="nav nav-tabs nav-justified">
+                        <li class="nav-item">
+                          <a class="nav-link  active show" id="active-tab" data-toggle="tab" href="#active"
+                            aria-controls="active" aria-expanded="true">PHONE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="link-tab" data-toggle="tab" href="#link" aria-controls="link"
+                            aria-expanded="false">STEWARD CODE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="click-tab" data-toggle="tab" href="#click" aria-controls="click"
+                            aria-expanded="false">CARD</a>
+                        </li>
+                      </ul>
+                      <br>
+                      <div class="tab-content px-1 pt-1">
+                        <div role="tabpanel" class="tab-pane" id="active" aria-labelledby="active-tab"
+                          aria-expanded="true">
+                          <form>
+                            <div class="controls">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="+234"
+                                  data-validation-required-message="This field is required" aria-invalid="false">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon5">&nbsp; &nbsp; &nbsp;<i
+                                      style="font-size: x-large;" class="fa fa-tty"></i>&nbsp; &nbsp; &nbsp;</span>
+                                </div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                            <div class="col-6 offset-3">
+                              <a class="btn btn-success btn-block">Add Customer</a>
+                              <button type="button" class="btn btn-block btn-default"
+                                (click)="modal.close('Close click')">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane" id="link" role="tabpanel" aria-labelledby="link-tab"
+                          aria-expanded="false">
+                          <form>
+                            <div class="controls">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="@"
+                                  data-validation-required-message="This field is required" aria-invalid="false">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon5">&nbsp; &nbsp; &nbsp;<i
+                                      style="font-size: x-large;" class="fa fa-tty"></i>&nbsp; &nbsp; &nbsp;</span>
+                                </div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                            <div class="col-6 offset-3">
+                              <a class="btn btn-success btn-block">Add Customer</a>
+                              <button type="button" class="btn btn-block btn-default"
+                                (click)="modal.close('Close click')">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane active show" id="click" role="tabpanel" aria-labelledby="click-tab"
+                          aria-expanded="false">
+                          <form>
+                            <div class="controls">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder=""
+                                  data-validation-required-message="This field is required" aria-invalid="false">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon5">&nbsp; &nbsp; &nbsp;<i
+                                      style="font-size: x-large;" class="fa fa-tty"></i>&nbsp; &nbsp; &nbsp;</span>
+                                </div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                            <div class="col-6 offset-3">
+                              <a class="btn btn-success btn-block">Add Customer</a>
+                              <button type="button" class="btn btn-block btn-default"
+                                (click)="modal.close('Close click')">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+
+            <ng-template #content1 let-modal1>
+              <div class="modal-popup">
+                <div class="modal-header bg-success">
+                  <h4 class="modal-title"><span style="text-align: center;">Enter</span></h4>
+                  <button type="button" class="close" aria-label="Close" (click)="modal1.dismiss('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="card-body" style="padding:0px">
+                    <div id="invoice-template" class="card-block" style="height: 100%;">
+
+                      <span>Receipt #: <strong>05-15-2020 10:01:56</strong></span> <span
+                        style="float: right;"><a>History</a></span>
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Item Title</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Ammount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+
+
+                            <!-- <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td> -->
+                          </tr>
+                          <!-- <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr> -->
+                        </tbody>
+                      </table>
+                      <hr>
+                      <!-- <div class="col-12 flex" style="padding:0px">
+                        <div class="col-6" style="display: inline-block; padding:0px">
+                          <span>Total</span>
+                          <h2>0.00</h2>
+                        </div>
+                        <div class="col-6" style="display: inline-block; padding:0px; text-align: right;">
+                          <span>Amount to Pay</span>
+                          <h2>0.00</h2>
+                        </div>
+                      </div> -->
+                      <hr>
+
+                      <!-- <div class="col-12 flex" style="padding:0px">
+                        <div class="col-5" style="display: inline-block; padding:0px 8px 0px 0px">
+                          <a class="btn btn-danger btn-block">Reset</a>
+                        </div>
+                        <div class="col-7" style="display: inline-block; padding:0px">
+                          <button type="button" class="btn btn-block btn-success">Checkout</button>
+                        </div>
+                      </div> -->
+                    </div>
+                    <!-- <div class="card-block">
+                      <ul class="nav nav-tabs nav-justified">
+                        <li class="nav-item">
+                          <a class="nav-link  active show" id="active-tab" data-toggle="tab" href="#active"
+                            aria-controls="active" aria-expanded="true">PHONE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="link-tab" data-toggle="tab" href="#link" aria-controls="link"
+                            aria-expanded="false">STEWARD CODE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="click-tab" data-toggle="tab" href="#click" aria-controls="click"
+                            aria-expanded="false">CARD</a>
+                        </li>
+                      </ul>
+                      <br>
+                      <div class="tab-content px-1 pt-1">
+                        <div role="tabpanel" class="tab-pane" id="active" aria-labelledby="active-tab"
+                          aria-expanded="true">
+                          <form>
+                            <div class="controls">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="+234"
+                                  data-validation-required-message="This field is required" aria-invalid="false">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon5">&nbsp; &nbsp; &nbsp;<i
+                                      style="font-size: x-large;" class="fa fa-tty"></i>&nbsp; &nbsp; &nbsp;</span>
+                                </div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                            <div class="col-6 offset-3">
+                              <a class="btn btn-success btn-block">Add Customer</a>
+                              <button type="button" class="btn btn-block btn-default"
+                                (click)="modal.close('Close click')">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane" id="link" role="tabpanel" aria-labelledby="link-tab"
+                          aria-expanded="false">
+                          <form>
+                            <div class="controls">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="@"
+                                  data-validation-required-message="This field is required" aria-invalid="false">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon5">&nbsp; &nbsp; &nbsp;<i
+                                      style="font-size: x-large;" class="fa fa-tty"></i>&nbsp; &nbsp; &nbsp;</span>
+                                </div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                            <div class="col-6 offset-3">
+                              <a class="btn btn-success btn-block">Add Customer</a>
+                              <button type="button" class="btn btn-block btn-default"
+                                (click)="modal.close('Close click')">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane active show" id="click" role="tabpanel" aria-labelledby="click-tab"
+                          aria-expanded="false">
+                          <form>
+                            <div class="controls">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder=""
+                                  data-validation-required-message="This field is required" aria-invalid="false">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon5">&nbsp; &nbsp; &nbsp;<i
+                                      style="font-size: x-large;" class="fa fa-tty"></i>&nbsp; &nbsp; &nbsp;</span>
+                                </div>
+                              </div>
+                              <div class="help-block"></div>
+                            </div>
+                            <div class="col-6 offset-3">
+                              <a class="btn btn-success btn-block">Add Customer</a>
+                              <button type="button" class="btn btn-block btn-default"
+                                (click)="modal.close('Close click')">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+
+          </section>
+
+          <div class="card mobile-hide col-5" style="padding: 0px;">
+
+            <div id="invoice-template" class="card-block" style="height: 100%;">
+
+              <span>Receipt #: <strong>05-15-2020 10:01:56</strong></span> <span
+                style="float: right;"><a>History</a></span>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Item Title</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Ammount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <!-- <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td> -->
+                  </tr>
+                  <!-- <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr> -->
+                </tbody>
+              </table>
+              <hr>
+              <div class="col-12 flex" style="padding:0px">
+                <div class="col-6" style="display: inline-block; padding:0px">
+                  <span>Total</span>
+                  <h2>0.00</h2>
+                </div>
+                <div class="col-6" style="display: inline-block; padding:0px; text-align: right;">
+                  <span>Amount to Pay</span>
+                  <h2>0.00</h2>
+                </div>
+              </div>
+              <hr>
+
+              <div class="col-12 flex" style="padding:0px">
+                <div class="col-5" style="display: inline-block; padding:0px 8px 0px 0px">
+                  <a class="btn btn-danger btn-block">Reset</a>
+                </div>
+                <div class="col-7" style="display: inline-block; padding:0px">
+                  <button type="button" class="btn btn-block btn-success">Checkout</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- </div> -->
+          </div>
+
+          <div class="card col-6">
+
+            <div id="invoice-template" class="" style="height: 100%;">
+
+              <span>Receipt #: <strong>05-15-2020 10:01:56</strong></span> <span
+                style="float: right;"><a>History</a></span>
+
+              <hr>
+              <div class="col-12 flex" style="padding:0px">
+                <div class="col-6" style="display: inline-block; padding:0px">
+                  <span>Total</span>
+                  <h2>0.00</h2>
+                </div>
+                <div class="col-6" style="display: inline-block; padding:0px; text-align: right;">
+                  <span>Amount to Pay</span>
+                  <h2>0.00</h2>
+                </div>
+              </div>
+              <hr>
+
+              <div class="col-12 flex" style="padding:0px">
+                <div class="col-5" style="display: inline-block; padding:0px 8px 0px 0px">
+                  <a class="btn btn-danger btn-block">Reset</a>
+                </div>
+                <div class="col-7" style="display: inline-block; padding:0px">
+                  <button type="button" class="btn btn-block btn-success">Checkout</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- </div> -->
+          </div>
+          <!-- </section> -->
+          <!--Invoice template ends-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
